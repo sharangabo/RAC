@@ -1,0 +1,246 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: teal;
+}
+
+/* Header Styles */
+header {
+    background: #000;
+    color: fuchsia;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    background-image: url(images/log.jpeg);
+    border-radius: 10px;
+}
+
+/* ... (your existing CSS) ... */
+
+/* ... (your existing CSS) ... */
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Ensure that the container uses Flexbox layout */
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ff00ff; /* Pink color */
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after,
+header nav ul li a:focus::after {
+    width: 100%;
+}
+
+/* ... (the rest of your existing CSS) ... */
+
+
+
+
+/* Main Content Styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background: #000;
+    color: fuchsia;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: url(images/log.jpeg);
+}
+
+/* 1st section CSS for Portfolio Section */
+.portfolio {
+    list-style-type: none;
+    margin-left:50px;
+    margin-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex; 
+}
+
+.portfolio li {
+    margin: 10px;
+}
+
+.portfolio a {
+    display: block;
+    position: relative;
+}
+
+.portfolio img {
+    display: inline-block; 
+    width: 100%; 
+    height: auto;
+    padding-inline-start: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.portfolio img a::after{
+    content:"";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    transition: width 0.3s ease;
+    background-color: #ff00ff;
+}
+
+.portfolio a:hover img {
+    opacity: 0.5;
+    transform: scale(1.1);
+    color: #ff00ff;
+}
+/* External CSS file */
+.portfolio span {
+    font-size: 23px;
+    font-weight: bold; 
+}
+
+.portfolio li {
+    margin: 10px;
+}
+
+/* ... other styles ... */
+
+
+#resources h2,
+#engagement h2,
+#events h2,
+#support h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(31, 0, 37, 0.884);
+}
+
+/* 2nd section of styles Resources*/
+
+.blog-post1 a {
+    text-decoration: none; 
+    color: rgb(168, 204, 236); 
+    font-weight: bold; 
+    transition: color 0.3s ease;
+    position: relative;
+    background: url('african script  1.png');
+    background-size: cover;
+    display: inline-block;
+    padding: 40px 300px;
+    margin: 0 20px; 
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.blog-post1 a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ff00ff; 
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease; 
+}
+.blog-post1 a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+
+.blog-post2 a {
+    text-decoration: none; 
+    color: rgb(168, 204, 236); 
+    font-weight: bold; 
+    transition: color 0.3s ease;
+    position: relative;
+    background: url('african script  1.png');
+    background-size: cover;
+    display: inline-block;
+    padding: 40px 300px;
+    margin: 0 20px; 
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.blog-post2 a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ff00ff;
+    position: relative;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+.blog-post2 a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.blog-post3 a {
+    text-decoration: none; 
+    color: rgb(168, 204, 236); 
+    font-weight: bold; 
+    transition: color 0.3s ease;
+    position: relative;
+    background: url('african script  1.png');
+    background-size: cover;
+    display: inline-block;
+    padding: 40px 300px;
+    margin: 0 20px; 
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.blog-post3 a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ff00ff;
+    position: relative;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+.blog-post3 a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
