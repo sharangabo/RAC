@@ -335,3 +335,32 @@ footer {
   .card-content {
     display: flex;
   }
+
+  /*icons styling*/
+  /* Social Media Icons */
+
+
+  
+  #support li {
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  #support p {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  #support img {
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+  
+  #support .linkedin-icon {
+    size: 8px;
+  }
+  
+  #support .instagram-icon {
+    size: 8px;
+  }
