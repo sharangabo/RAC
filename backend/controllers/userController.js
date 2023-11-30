@@ -28,5 +28,36 @@ const registerUser = async (req, res) => {
     }
 }
 
+// ===== USER LOGIN =====
+const userLogin = async (req, res) => {
+    const { email, password } = req.body;
+    //check if user exists
+    const userFound = await User.findOne({ email });
+    if (userFound ) {
+        // compare the entered password with saved one in db
+        const isMatch = await bcrypt.compare(password, userFound.password);
+        if (!isMatch){
+            return  res.status(400).json({
+                success: false,
+                message: "Invalid credentials",
+            })
+        }
+        const token = await jwt.sign({id:userFound?._id},process.env.JWT_SECRET, {expiresIn:"2d"})
+        console.log("user Login", userFound)
+        res.status(200).json({
+            _id: userFound?._id,
+            username: userFound?.username,
+            email: userFound?.email,
+            token
+          });
+      //Check if password is match
+      
+    } else {
+      res.status(401);
+      throw new Error("Invalid Login Credentials");
+    }
+  };
+  
 
-module.exports = registerUser
+
+module.exports = {registerUser,userLogin}
