@@ -17,5 +17,6 @@ app.get("/", (req, res)=> {
 })
 app.use("/api/user", userRoute)
 
+
 const PORT = process.env.PORT || 3000
 app.listen(PORT, ()=> {console.log(`App listen on port ${PORT}`)})
