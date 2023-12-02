@@ -26,7 +26,7 @@ async function registerUser() {
 
   try {
     // Send a POST request to the backend endpoint
-  const data = await fetch('http://localhost:4000/api/user/auth/register', {
+  const data = await fetch('http://localhost:5500/api/user/auth/register', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ async function loginUser() {
 
   try {
     // Send a POST request to the backend endpoint
-  const data = await fetch('http://localhost:4000/api/user/auth/login', {
+  const data = await fetch('http://localhost:5500/api/user/auth/login', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
