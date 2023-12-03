@@ -25,3 +25,8 @@ Share opportunities with your networks and communities
 Provide feedback on projects and initiatives
 Create original artwork or films to be featured
 Together we can grow African cinema and share the continent's rich stories with the world!
+
+# how to make it run:
+* navigate to MYproject folder(front-end)
+* all the backend system in backend folder (back-end)
+* to run the main page #index.html# file which is linked to all front-end files
