@@ -1,4 +1,4 @@
-# Revittalizing African Cinema
+# Revitalizing African Cinema
 This project aims to revitalize and support the growth of African cinema, with a focus on Rwandan filmmaking. Through creative innovations in art, technology, and community engagement, we hope to showcase African stories while pushing boundaries in the realm of cinema.
 
 Mission
